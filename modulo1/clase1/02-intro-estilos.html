@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Intro Estilos</title>
+
+  <link rel="stylesheet" href="css/02-intro-estilos.css">
+
+</head>
+
+<body>
+
+
+  <!-- .caja{un contenido} -->
+  <div class="caja">un contenido</div>
+
+
+  <!-- p.caja>lorem20 -->
+  <p class="caja">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel possimus autem asperiores, animi nemo laudantium ad quia cupiditate molestiae maiores.
+  </p>
+
+  <!-- .caja.madre{contenido}>.caja.hija{contenido2} -->
+  <div class="caja madre">
+    contenido
+    <div class="caja hija">contenido2</div>
+  </div>
+
+
+
+  <!-- .caja.madre{contenido}>.caja.hija{contenido2}>.caja.nieta{contenido3} -->
+  <div class="caja madre">
+    contenido
+    <div class="caja hija">
+      contenido2
+      <div class="caja nieta">
+        contenido3
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- #mi-caja.caja>lorem20 -->
+  <div id="mi-caja" class="caja">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, illo. Molestiae officiis commodi non quo repellat, voluptatum exercitationem porro doloremque?
+  </div>
+
+
+
+</body>
+</html>

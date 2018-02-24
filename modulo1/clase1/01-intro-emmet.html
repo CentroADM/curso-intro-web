@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    Introducción a Emmet
+  </title>
+</head>
+<body>
+
+  <!-- h1 -->
+  <h1>
+    Introducción a Emmet
+  </h1>
+
+  <!-- etiqueta{cualquier cosa} -->
+  <etiqueta>
+    cualquier cosa
+  </etiqueta>
+
+
+  <!-- a{etiqueta para crear un link} -->
+  <a href="http://wikipedia.org" target="_blank">
+    etiqueta para crear un link a wikipedia
+  </a>
+
+
+  <!-- identidad o id -->
+
+  <!-- etiqueta#una-identidad -->
+  <etiqueta id="una-identidad"></etiqueta>
+
+  <!-- etiqueta.clase -->
+  <etiqueta class="clase"></etiqueta>
+
+
+  <!-- etiqueta.clase1.clase2.clase3 -->
+  <etiqueta class="clase1 clase2 clase3"></etiqueta>
+
+
+
+  <!-- etiquedad#otra-identidad.clase1.clase2 -->
+  <etiquedad id="otra-identidad" class="clase1 clase2"></etiquedad>
+
+
+
+  <!-- etiqueta[unatributo] -->
+  <etiqueta unatributo=""></etiqueta>
+
+
+
+
+  <!-- etiqueta[unatributo=unvalor] -->
+  <etiqueta unatributo="unvalor"></etiqueta>
+
+
+
+  <!-- etiqueta[un-atributo=un-valor][otro-atributo=otro-valor] -->
+  <etiqueta un-atributo="un-valor" otro-atributo="otro-valor"></etiqueta>
+
+
+  <!-- todos juntos -->
+  <!-- etiqueta#identidad-diferente.clase1.clase2[un-atributo=un-valor] -->
+  <etiqueta id="identidad-diferente" class="clase1 clase2" un-atributo="un-valor"></etiqueta>
+
+
+  <!-- automaticamente se carga la etiqueta 'div' -->
+  <!-- .una-clase -->
+  <div class="una-clase"></div>
+
+
+
+  <!-- .madre>.hijo -->
+  <div class="madre">
+    <div class="hijo"></div>
+  </div>
+
+
+  <!-- .madre>.hijo>.nieto>.bisnieto -->
+  <div class="madre">
+    <div class="hijo">
+      <div class="nieto">
+        <div class="bisnieto"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- .madre>.hija+.otra-hija -->
+  <div class="madre">
+    <div class="hija"></div>
+    <div class="otra-hija"></div>
+  </div>
+
+
+  <!-- .madre>.hija^+.tia>.prima -->
+  <div class="madre">
+    <div class="hija"></div>
+  </div>
+  <div class="tia">
+    <div class="prima"></div>
+  </div>
+
+
+
+  <!-- mismo resultado, pero ahora agrupando -->
+  <!-- (.madre>.hija)+(.tia>.prima) -->
+  <div class="madre">
+    <div class="hija"></div>
+  </div>
+  <div class="tia">
+    <div class="prima"></div>
+  </div>
+
+
+
+  <!-- li{contenido}*3 -->
+  <li>contenido</li>
+  <li>contenido</li>
+  <li>contenido</li>
+
+
+  <!-- li{contenido $}*3 -->
+  <li>contenido 1</li>
+  <li>contenido 2</li>
+  <li>contenido 3</li>
+
+
+  <!-- menu "real" -->
+  <!-- nav>ul>(li>a{elemento menu $})*3 -->
+  <nav>
+    <ul>
+      <li><a href="">elemento menu 1</a></li>
+      <li><a href="">elemento menu 2</a></li>
+      <li><a href="">elemento menu 3</a></li>
+    </ul>
+  </nav>
+
+
+
+
+
+</body>
+</html>
