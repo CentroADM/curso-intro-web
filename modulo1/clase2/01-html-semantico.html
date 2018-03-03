@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+
+    article {
+      border: 1px solid #000;
+      padding: 50px;
+    }
+
+    article footer {
+      /*tar*/
+      text-align: right;
+    }
+
+  </style>
+
+</head>
+<body>
+
+
+  <!-- header#cabecera-principal -->
+  <header id="cabecera-principal">
+
+    <!-- #logo>img -->
+    <div id="logo">
+      <img src="http://fakeimg.pl/150x100" alt="">
+    </div>
+
+    <!-- nav>ul>(li>a{Menú $})*4 -->
+    <nav>
+      <ul>
+        <li><a href="">Menú 1</a></li>
+        <li><a href="">Menú 2</a></li>
+        <li><a href="">Menú 3</a></li>
+        <li><a href="">Menú 4</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- La etiqueta main solo debe suceder una vez en un documento -->
+  <main>
+
+    <!-- aside{Barra Lateral} -->
+    <aside>
+      Barra Lateral
+    </aside>
+
+    <!-- 'article' define un elemento autosuficiente de contenido -->
+    <article class="tipo-de-contenido">
+
+      <!-- header -->
+      <header>
+        <!-- h4>lorem15 -->
+        <h4>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste corrupti harum asperiores error! Cum, id.
+        </h4>
+
+        <!-- section.fecha -->
+        <section class="fecha">
+          Publicado el 17 de marzo
+        </section>
+
+        <!-- section.autor -->
+        <section class="autor">
+          Autor: Nombre de Autor
+        </section>
+
+      </header>
+
+
+      <!-- section.contenido>(p>lorem12)*3 -->
+      <section class="contenido">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, quae, itaque. Dolorem.</p>
+        <p>Pariatur reiciendis distinctio mollitia magnam aspernatur nesciunt non asperiores laudantium delectus nemo.</p>
+        <p>Accusamus odit facilis asperiores! Quis deleniti rem quibusdam praesentium dolores, aut, eveniet.</p>
+      </section>
+
+
+
+      <footer>
+        <!-- a>button{Ver más} -->
+        <a href=""><button>Ver más</button></a>
+      </footer>
+
+
+    </article>
+
+
+  </main>
+
+
+  <!-- footer#pie-pagina -->
+  <footer id="pie-pagina">
+
+    <!-- section{submenú}+section{info legal} -->
+    <section>submenú</section>
+    <section>info legal</section>
+
+  </footer>
+
+
+</body>
+</html>
