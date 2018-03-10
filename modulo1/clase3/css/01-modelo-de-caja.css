@@ -1,0 +1,87 @@
+* {
+  outline: 1px solid blue;
+}
+
+/* RESET */
+/* hacer que html y body midan 100%, elminar sus margenes */
+
+html,
+body {
+  /*w100p*/
+  width: 100%;
+  /*h100p*/
+  height: 100%;
+
+  /*m0*/
+  margin: 0;
+
+}
+
+
+
+.caja {
+
+  /*w300*/
+  width: 300px;
+
+  /*h300*/
+  height: 300px;
+
+  /*p64*/
+  padding: 64px;
+
+  /*pt16*/
+  /*padding-top: 16px;*/
+
+  /*pb32*/
+  /*padding-bottom: 32px;*/
+
+  /*pl48*/
+  /*padding-left: 48px;*/
+
+  /*pr64*/
+  /*padding-right: 64px;*/
+
+
+  /* vertical y horizontal */
+
+  /*p*/
+  /*padding: 32px 64px;*/
+
+
+  /* definir cada direccion en una linea */
+  /* orden: manecillas de reloj */
+  /* arriba, derecha, abajo, izquierda */
+
+  /*p*/
+  /*padding: 16px 32px 48px 64px;*/
+
+
+  /*p32*/
+  padding: 32px;
+
+  /* al aumentar padding, aumenta tamaño caja automaticamente*/
+  /* para obligar a que se respete ancho y alto asignado */
+
+  /*bzbb*/
+  box-sizing: border-box;
+
+
+  /* igual que padding, misma sintaxis */
+  /*m64*/
+  margin: 64px;
+
+
+  /*bd*/
+  border: 5px solid black;
+  border: 10px dotted red;
+
+  /*bl*/
+  border-left: 30px solid green;
+
+  /*br*/
+  border-right: 50px dashed purple;
+
+  /* orillas modifican tamaño de cajas */
+
+}

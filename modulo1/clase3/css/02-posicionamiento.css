@@ -1,0 +1,100 @@
+* {
+  outline: 1px solid blue;
+}
+
+
+
+.contenedor {
+  /*m100*/
+  margin: 100px;
+  /*bgc#eee*/
+  background-color: #eee;
+
+  /*bd*/
+  border: 10px solid red;
+
+}
+
+
+
+
+#contenedor-A .caja {
+
+  /*poss*/
+  position: static;
+  /* el valor por defecto.
+  las cosas no estan posicionadas,
+  por lo que aparecen despues de lo anterior
+  */
+
+}
+
+#contenedor-B .caja {
+
+  /*posr*/
+  position: relative;
+
+  /*t50*/
+  top: 50px;
+
+  /*l100*/
+  left: 100px;
+
+}
+
+#contenedor-B2 .caja:nth-child(1) {
+
+  /*posr*/
+  position: relative;
+
+  /*t50*/
+  top: 50px;
+
+  /*l100*/
+  left: 100px;
+
+}
+#contenedor-B2 .caja:nth-child(2) {
+
+  /*posr*/
+  position: relative;
+
+  /*t50*/
+  bottom: 50px;
+
+  /*l100*/
+  right: 100px;
+
+}
+
+#contenedor-C .caja,
+#contenedor-C2 .caja {
+  /*posa*/
+  position: absolute;
+  /*t32*/
+  top: 32px;
+  /*l32*/
+  left: 32px;
+}
+
+#contenedor-C2 {
+  position: relative;
+}
+
+
+
+#contenedor-D {
+  /*posf*/
+  position: fixed;
+  top: 32px;
+  left: 200px;
+}
+
+
+#contenedor-E {
+  /*pos*/
+  position: sticky;
+
+  top: 200px;
+  
+}

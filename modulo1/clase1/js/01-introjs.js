@@ -29,7 +29,12 @@ function hacerAlgoCuandoClick()
 }
 
 
-/*
+
+
+
+
+
+
 setTimeout(
   function() {
     console.log("algo sucede")
@@ -39,8 +44,8 @@ setTimeout(
 
 setInterval(
   function() {
-    console.log("algo sucede muchas veces")
+    hacerAlgoCuandoClick()
+    // console.log("algo sucede muchas veces")
   },
-  1500
+  1000
 )
-*/
