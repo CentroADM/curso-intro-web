@@ -1,0 +1,163 @@
+body * {
+    /* db */
+    display: block;
+
+    /* bz */
+    box-sizing: border-box;
+}
+
+#main-menu li {
+
+    /* fl */
+    float: left;
+
+    /* tac */
+    text-align: center;
+
+
+    /* p16 */
+    padding: 16px;
+
+    
+}
+
+#main-menu li.active,
+#main-menu li.active a {
+
+    /* bgc#000 */
+    background-color: #000;
+
+    /* c#fff */
+    color: #ffffff;
+
+}
+
+
+#main-header {
+
+    /* w100p */
+    width: 100%;
+
+    /* h20p */
+    height: 20%;
+
+}
+
+main {
+
+    /* ovya */
+    overflow-y: scroll;
+
+    /* p32 */
+    padding: 32px;
+}
+
+/* body > footer, */
+#main-footer {
+    /* w100p */
+    width: 100%;
+    /* h10p */
+    height: 10%;
+}
+
+
+
+
+/* REGLAS RESPONSIVAS */
+
+
+/* primero, version movil */
+
+#main-menu li {
+    width: 100%;
+}
+
+
+aside, main {
+    
+    /* w100p */
+    width: 100%;
+
+    height: auto;
+
+    min-height: 250px;
+
+    /* tac */
+    text-align: center;
+
+}
+
+
+/* luego, reglas para tablet */
+
+/* @media screen and (min-width:768px) and (max-width: 1199px) { */
+@media screen and (min-width:768px) {
+    
+    #main-menu li {
+        width: 50%;
+    }
+
+
+    aside, main {
+        /* h70p */
+        height: 70%;
+        /* fl */
+        float: left;
+    }
+
+    aside, main {
+        /* w33.33p */
+        width: 33.33%;
+    }
+
+    #first-sidebar {
+        /* ta */
+        text-align: left;
+    }
+    main {
+        /* ta */
+        text-align: left;
+    }
+    #second-sidebar {
+        /* ta */
+        text-align: right;
+    }
+    
+}
+
+
+/* reglas para laptops o mayores */
+@media screen and (min-width:1200px) {
+    
+    #main-menu li {
+        width: 25%;
+    }
+
+    aside {
+        width: 25%;
+    }
+
+    main {
+        width: 50%;
+    }
+}
+
+
+/* pantalla extra grande */
+
+@media screen and (min-width:1600px) {
+    
+    #main-menu li {
+        width: 25%;
+    }
+
+    aside {
+        width: 15%;
+    }
+
+    main {
+        width: 70%;
+    }
+}
+
+

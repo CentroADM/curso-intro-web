@@ -1,0 +1,34 @@
+* {
+    outline: 1px solid #abc;
+}
+
+
+body, html {
+
+    /* m0 */
+    margin: 0;
+
+    /* p0 */
+    padding: 0;
+
+    /* w100p */
+    width: 100%;
+
+    /* h100p */
+    height: 100%;
+
+}
+
+ul, li {
+
+    /* m0 */
+    margin: 0;
+
+    /* p0 */
+    padding: 0;
+
+}
+
+li {
+    list-style: none;
+}
