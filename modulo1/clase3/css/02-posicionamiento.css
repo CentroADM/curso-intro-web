@@ -15,6 +15,11 @@
 
 }
 
+.caja {
+  /*p16*/
+  padding: 16px;
+}
+
 
 
 
@@ -72,9 +77,9 @@
   /*posa*/
   position: absolute;
   /*t32*/
-  top: 32px;
+  top: 0px;
   /*l32*/
-  left: 32px;
+  left: 0px;
 }
 
 #contenedor-C2 {
@@ -96,5 +101,5 @@
   position: sticky;
 
   top: 200px;
-  
+
 }

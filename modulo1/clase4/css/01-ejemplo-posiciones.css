@@ -1,0 +1,150 @@
+html, body {
+
+  /*m0*/
+  margin: 0;
+  /*w100p*/
+  width: 100%;
+
+
+
+}
+
+* {
+  outline: 1px solid blue;
+}
+
+* {
+  /*bzbb*/
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#portada {
+  /*w100p*/
+  width: 100%;
+  /*h80vh*/
+  height: 80vh;
+
+  /*posr*/
+  position: relative;
+}
+
+#portada .contenedor-imagen {
+  /*w100p*/
+  width: 100%;
+  /*h100p*/
+  height: 100%;
+}
+
+#portada .contenedor-imagen img {
+  /*w100p*/
+  width: 100%;
+  /*h100p*/
+  height: 100%;
+}
+
+#portada .contenedor-texto {
+
+  /*posa*/
+  position: absolute;
+
+  /*w80p*/
+  width: 80%;
+
+  /*t40p*/
+  top: 40%;
+  /*l10p*/
+  left: 10%;
+
+
+  /*tac*/
+  text-align: center;
+
+}
+
+#portada .contenedor-texto h1 {
+
+  /*m0*/
+  margin: 0;
+
+  /*fz100*/
+  font-size: 100px;
+
+  /*c#fff*/
+  color: #fff;
+
+}
+
+#portada footer {
+  /*posa*/
+  position: absolute;
+  /*b0*/
+  bottom: 0;
+  /*r0*/
+  right: 0;
+
+  /*p32*/
+  padding: 32px;
+
+}
+
+#portada footer button {
+  /*p16*/
+  padding: 16px;
+
+  /*bgc#000*/
+  background-color: #000;
+
+  /*c#fff*/
+  color: #fff;
+
+  /*bdrs0*/
+  border-radius: 0;
+
+  /*bdn*/
+  border: none;
+
+}
+
+
+/*
+Observar que no hay espacio entre nombre tag y ID.
+con esto, el id es el del elemento. Si hubeira espacio, indicaríamos
+que es el ID de algún elemento hijo
+*/
+
+header#menu-cabecera {
+
+  /*pos*/
+  position: sticky;
+  top: 0px;
+
+  /*w100p*/
+  width: 100%;
+
+  /*h20vh*/
+  height: 20vh;
+
+  /*tac*/
+  text-align: center;
+
+  /*fz48*/
+  font-size: 48px;
+
+  /*p48*/
+  padding: 48px;
+
+  /*bgc#fff*/
+  background-color: #fff;
+
+}
+
+
+
+
+main #texto {
+  /*fz24*/
+  font-size: 24px;
+  /*p*/
+  padding: 48px 160px;
+}
