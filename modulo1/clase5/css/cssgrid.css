@@ -1,0 +1,85 @@
+/* .container { */
+body {
+    display: grid;
+  
+    grid-template-areas:
+      "header header header"
+      "firstsidebar content secondsidebar"
+      "footer footer footer";
+  
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 20% 1fr auto;
+    grid-gap: 10px;
+  
+    height: 100vh;
+  }
+
+
+  #main-header {
+    grid-area: header;
+  }
+  
+/* Combinando CSSGrid y Flexbox */
+
+#main-header nav,
+#main-header ul {
+    height: 100%;
+}
+
+#main-header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#main-header ul {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+  #first-sidebar {
+    grid-area: firstsidebar;
+    margin-left: 0.5rem;
+  }
+  
+  main {
+    grid-area: content;
+  }
+  
+  #second-sidebar {
+    grid-area: secondsidebar;
+    margin-right: 0.5rem;
+  }
+  
+  footer {
+    grid-area: footer;
+  }
+
+
+
+  @media (max-width: 768px) {
+    body {
+      grid-template-areas:
+        "header"
+        "firstsidebar"
+        "content"
+        "secondsidebar"
+        "footer";
+  
+      grid-template-columns: 1fr;
+      grid-template-rows:
+        20% /* Header */
+        minmax(75px, auto) /* Nav */
+        1fr /* Content */
+        minmax(75px, auto) /* Sidebar */
+        auto; /* Footer */
+    }
+  
+    nav, aside {
+      margin: 0;
+    }
+  }
