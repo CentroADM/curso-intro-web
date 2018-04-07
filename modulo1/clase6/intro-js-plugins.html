@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Intro JS plugins</title>
+
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+  <style>
+    body {
+      background-color: #aaa;
+    }
+
+    #slider {
+      /*w80vw*/
+      width: 80vw;
+      /*h50vh*/
+      height: 50vh;
+      /*ml10vw*/
+      margin-left: 10vw;
+    }
+
+    #slider article {
+      /*w100p*/
+      width: 100%;
+
+      /*h50vh */
+      height: 50vh;
+
+      /*bzbb*/
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+
+      /*bgc*/
+      background-color: #eee;
+
+      /*p32*/
+      padding: 32px;
+      outline: 1px solid red;
+
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <h1>
+    Jquery Plugins
+  </h1>
+
+
+  <!-- #slider -->
+  <div id="slider">
+
+    <!-- (article>p>lorem18)*4 -->
+    <article>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, soluta temporibus delectus quidem totam vitae voluptas fugiat quibusdam.</p>
+    </article>
+    <article>
+      <p>Reiciendis, quod eaque beatae quam cupiditate error, voluptatum mollitia asperiores corporis velit atque officia sunt quaerat consequatur modi.</p>
+    </article>
+    <article>
+      <p>Rem, repellat. Excepturi voluptates, voluptatem ducimus vitae modi! Quae quisquam sequi officiis sunt molestiae blanditiis, sit porro numquam.</p>
+    </article>
+    <article>
+      <p>Eligendi, iusto blanditiis reprehenderit aspernatur reiciendis quam. Similique, est, repellendus. Reprehenderit recusandae dignissimos corporis architecto saepe quia autem.</p>
+    </article>
+
+  </div>
+
+
+  <!-- .imagen -->
+  <div class="imagen" style="width: 400px; height:400px;">
+    <!-- img -->
+    <img src="http://unsplash.it/600/400" alt="">
+  </div>
+
+
+  <!-- .imagen -->
+  <div class="imagen-2" style="width: 400px; height:400px;">
+    <!-- img -->
+    <img src="http://unsplash.it/600/400" alt="">
+  </div>
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <script>
+
+    $(document).ready(function(){
+
+      var objetoSeleccionado
+
+      objetoSeleccionado = $('body')
+
+      objetoSeleccionado.animate({
+        paddingTop: 300
+      }, 1000)
+
+
+      $('.imagen').imgLiquid()
+
+      $('.imagen-2').imgLiquid(
+        {
+          fill: false,
+          verticalAlign: "bottom"
+        }
+      )
+
+
+      $('#slider').slick(
+        {
+          dots: true
+        }
+      )
+
+    })
+
+  </script>
+
+</body>
+</html>
