@@ -1,4 +1,4 @@
-# curso-intro-web
+# Diplomado en Diseño UX y Desarrollo Web
 
 - Teoría
   - Introducción al internet e introducción al concepto de página web / hipertexto
